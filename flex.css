@@ -5,6 +5,15 @@
 }
 
 .gallery .card {
-  /* Shorthand for flex-grow and flex-shrink */
-  flex: 1 2;
+  width: 20rem;
+}
+
+.gallery .card:nth-child(1) {
+  flex-grow: 2;
+  /* Set the base size of the flex item */
+  flex-basis: 40%;
+}
+
+.gallery .card:nth-child(2) {
+  flex-grow: 1;
 }

@@ -1,16 +1,11 @@
 .gallery {
   display: flex;
   gap: 1rem;
-  /* Shorthand for flex-direction and flex-wrap */
-  flex-flow: row wrap;
-}
-
-.gallery .card {
-  width: 20rem;
-  flex: 1 1 40%;
-}
-
-/* Every third element */
-.gallery .card:nth-child(3n) {
-  flex-basis: 100%;
+  flex-direction: row-reverse;
+  /*
+  * start and end use the direction of the content,
+  * flex-start and flex-end use the flex direction
+  */
+  justify-content: start;
+  direction: rtl;
 }

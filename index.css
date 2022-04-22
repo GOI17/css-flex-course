@@ -34,6 +34,7 @@ a:focus {
   border-radius: 0.3rem;
   box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.4);
   color: #333;
+  width: 20rem;
 }
 
 .card .card__img {

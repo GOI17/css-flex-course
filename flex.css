@@ -1,13 +1,16 @@
 .gallery {
   display: flex;
   gap: 1rem;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 100vh;
-  justify-content: space-around; /* modify main axis */
-  align-content: space-between; /* modify cross axis */
+  /* Shorthand for flex-direction and flex-wrap */
+  flex-flow: row wrap;
 }
 
 .gallery .card {
-  width: 40%;
+  width: 20rem;
+  flex: 1 1 40%;
+}
+
+/* Every third element */
+.gallery .card:nth-child(3n) {
+  flex-basis: 100%;
 }

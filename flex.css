@@ -4,10 +4,7 @@
   flex-direction: row;
 }
 
-.gallery .card:nth-child(1) {
-  flex-shrink: 1;
-}
-
-.gallery .card:nth-child(2) {
-  flex-shrink: 2;
+.gallery .card {
+  /* Shorthand for flex-grow and flex-shrink */
+  flex: 1 2;
 }

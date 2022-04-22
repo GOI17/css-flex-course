@@ -4,22 +4,10 @@
   flex-direction: row;
 }
 
-.gallery .card {
-  width: 20rem;
-  display: flex;
-  flex-direction: column;
+.gallery .card:nth-child(1) {
+  flex-shrink: 1;
 }
 
-.card:nth-child(2) {
-  /* This order only applies on the visual part, but don't modifies the html order */
-  order: -1;
-}
-
-.card .card__img {
-  order: -2;
-}
-
-.card .card__category {
-  order: -1;
-  align-self: flex-end;
+.gallery .card:nth-child(2) {
+  flex-shrink: 2;
 }

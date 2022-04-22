@@ -1,19 +1,16 @@
 .gallery {
   display: flex;
   gap: 1rem;
-  flex-direction: row;
+  /* Shorthand for flex-direction and flex-wrap */
+  flex-flow: row wrap;
 }
 
 .gallery .card {
   width: 20rem;
+  flex: 1 1 40%;
 }
 
-.gallery .card:nth-child(1) {
-  flex-grow: 2;
-  /* Set the base size of the flex item */
-  flex-basis: 40%;
-}
-
-.gallery .card:nth-child(2) {
-  flex-grow: 1;
+/* Every third element */
+.gallery .card:nth-child(3n) {
+  flex-basis: 100%;
 }

@@ -2,12 +2,17 @@
   display: flex;
   gap: 1rem;
   flex-direction: row;
-  flex-wrap: wrap;
-  height: 100vh;
-  justify-content: space-around; /* modify main axis */
-  align-content: space-between; /* modify cross axis */
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* height: 100vh; */
+  /* justify-content: space-around; modify main axis */
+  /* align-content: space-between; modify cross axis */
 }
 
 .gallery .card {
-  width: 40%;
+  width: 20rem;
+}
+
+.gallery:nth-child(2) {
+  align-items: flex-end;
 }
